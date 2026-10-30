@@ -24,7 +24,7 @@ npm run preview
 
 ## 当前功能
 
-- 英文界面、USD 价格、8 件本地模拟商品。
+- 默认英文界面，支持中英文切换并记住语言选择；价格始终使用 USD，只调整数字显示格式，不做汇率换算。共 8 件本地模拟商品。
 - 顶部三张商品轮播，支持每 5 秒自动切换、左右按钮、指示点和手机左右滑动，点击任意 Banner 跳到商品区；悬停、键盘聚焦、切至后台或系统开启减少动态效果时暂停自动切换。
 - 自行绘制的本地 SVG 商品插画，不依赖外部商品图片。
 - 商品分类、关键词搜索、价格排序、搜索无结果状态。
@@ -38,15 +38,24 @@ npm run preview
 
 ```text
 src/
-  App.tsx                    页面结构、搜索筛选和购物车状态
-  App.css                    页面样式与响应式布局
-  index.css                  全局样式、字体与基础无障碍样式
-  components/
-    ProductCard.tsx           商品卡片
-    CartDrawer.tsx            购物车抽屉
-    Icon.tsx                  共用图标
-  data/products.ts            商品类型、模拟数据和价格格式化
-public/products/              本地商品 SVG 插画
+  App.tsx                     路由入口，不放页面业务
+  main.tsx                    初始化 i18n、全局 Less 和 React
+  router/index.tsx            集中式路由配置：/ 商品首页、* 404
+  pages/
+    ShopPage/index.tsx        商品页、搜索筛选和购物车状态
+    ShopPage/index.less       商品页与现有组件的响应式样式
+    NotFoundPage/index.tsx    404 页面
+    NotFoundPage/index.less   404 样式
+  components/                 商品卡片、购物车、轮播、语言切换等
+  hooks/useCatalog.ts         根据语言生成商品展示文案
+  data/products.ts            稳定的商品 ID、分类 ID 与价格等数据
+  i18n/
+    index.ts                  语言初始化、持久化和页面元信息
+    locales/en.json           英文文案
+    locales/zh-CN.json        中文文案
+  styles/index.less           全局样式、Less 变量与基础无障碍样式
+  utils/formatPrice.ts        按语言格式化美元价格
+public/products/               本地商品 SVG 插画
 ```
 
 Google Fonts 加载失败时会使用系统字体，商品插画和核心功能仍可使用。
