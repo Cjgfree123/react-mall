@@ -63,3 +63,21 @@ Google Fonts 加载失败时会使用系统字体，商品插画和核心功能�
 ## 演示检查
 
 搜索 mug → 切换分类 → 清除关键词 → 加入不同商品 → 重复加购 → 修改数量 → 移除商品 → 检查合计 → 切换手机尺寸 → 检查购物车关闭与滚动。
+
+## SSH 一键部署（11030）
+
+服务器需要已安装并启动 Docker；本机只需 Node.js 和 SSH，不需要运行 Docker。
+
+在本机项目目录执行，把地址替换为真实服务器 IP：
+
+```bash
+npm run deploy -- root@服务器IP
+```
+
+SSH 使用自定义端口时：`npm run deploy -- root@服务器IP 2222`。脚本自动构建 dist，通过一个 SSH 连接上传部署包，在服务器构建 Nginx 镜像，并以 11030:80 启动容器。部署目录是 /opt/react-mall，容器名为 react-mall-11030，使用 unless-stopped 重启策略。部署前检查端口；构建成功才替换旧容器；访问检查失败时尝试恢复旧镜像。
+
+访问 http://服务器公网IP:11030。云服务器安全组需要允许 TCP 11030 入站。首次部署需要服务器能拉取 nginx:stable-alpine 镜像。
+
+查看服务：`docker logs --tail 50 react-mall-11030`。
+
+Dockerfile 使用本机已经构建好的 dist，避免服务器安装 Node.js 和项目依赖。nginx.conf 已包含 React 路由的 index.html 回退及静态资源缓存配置。之前单独上传的 /tmp/react-mall-dist.tar.gz 不需要再次手动解压。
