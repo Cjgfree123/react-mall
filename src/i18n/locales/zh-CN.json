@@ -1,0 +1,192 @@
+{
+  "brand": {
+    "first": "购物",
+    "second": "平台",
+    "name": "购物平台",
+    "home": "购物平台首页"
+  },
+  "meta": {
+    "title": "购物平台 — 每一天的好物发现",
+    "description": "为家居、日常与出行挑选实用好物。演示商品统一使用美元价格。"
+  },
+  "header": {
+    "announcement": "让每一天，多一点好物相伴。",
+    "currency": "美元 USD",
+    "language": "语言",
+    "languageEn": "EN",
+    "languageZh": "中文"
+  },
+  "categories": {
+    "all": "全部好物",
+    "home": "家居生活",
+    "travel": "出行用品",
+    "work": "工作创作"
+  },
+  "catalog": {
+    "skip": "跳到商品区",
+    "valuesLabel": "选品理念",
+    "valueSelected": "用心挑选每件好物",
+    "valueEveryday": "为日常生活而设计",
+    "valueWorld": "发现生活的小惊喜",
+    "eyebrow": "精选好物",
+    "title": "发现你的下一件日常好物。",
+    "note": "小小细节，让日常更美好。",
+    "categoriesLabel": "按分类筛选",
+    "searchLabel": "按商品名称搜索",
+    "searchPlaceholder": "搜索商品名称…",
+    "clearSearch": "清空搜索",
+    "filterSearchAll": "在全部分类中搜索“{{query}}”",
+    "filterSearchCategory": "在{{category}}中搜索“{{query}}”",
+    "filterCategory": "正在浏览：{{category}}",
+    "clearAll": "清除全部筛选",
+    "results": "共 {{total}} 件商品，找到 {{count}} 件",
+    "sortBy": "排序",
+    "sortLabel": "商品排序",
+    "sortFeatured": "推荐排序",
+    "sortLow": "价格从低到高",
+    "sortHigh": "价格从高到低",
+    "emptyTitle": "没有找到商品。",
+    "emptySearchAll": "没有商品与“{{query}}”匹配。",
+    "emptySearchCategory": "{{category}}中没有商品与“{{query}}”匹配。",
+    "emptyCategory": "{{category}}中暂无商品。",
+    "emptyHelp": "试试其他商品名称、切换分类，或清除筛选条件。",
+    "clearFilters": "清除筛选"
+  },
+  "common": {
+    "imageAlt": "{{name}}，{{color}}",
+    "imageUnavailable": "图片暂时无法显示",
+    "unavailableImage": "{{name}}，图片暂时无法显示"
+  },
+  "product": {
+    "add": "加入购物车",
+    "addLabel": "将{{name}}加入购物车",
+    "addLabelInBag_other": "将{{name}}加入购物车，购物车内已有 {{count}} 件",
+    "badges": {
+      "favorite": "人气日常好物",
+      "new": "新品上架"
+    },
+    "addLabelInBag_one": "将{{name}}加入购物车，购物车内已有 {{count}} 件"
+  },
+  "cart": {
+    "open_other": "打开购物车，共 {{count}} 件商品",
+    "title": "购物车",
+    "eyebrow": "好选择，都在这里。",
+    "close": "关闭购物车",
+    "each": "{{color}} · 单价 {{price}}",
+    "decrease": "减少{{name}}的数量",
+    "increase": "增加{{name}}的数量",
+    "quantity": "数量：{{count}}",
+    "remove": "移除",
+    "removeLabel": "从购物车移除{{name}}",
+    "subtotal": "商品金额合计",
+    "currency": "USD",
+    "shipping": "合计不包含运费和税费。",
+    "noPayment": "这是演示商店，不会收取任何款项。",
+    "continue": "继续选购",
+    "emptyTitle": "给生活好物留一点位置。",
+    "emptyDescription": "购物车还是空的，去发现你的日常好物吧。",
+    "explore": "浏览商品",
+    "open_one": "打开购物车，共 {{count}} 件商品"
+  },
+  "toast": {
+    "added": "已成功加购",
+    "inBag_other": "{{name}} · 购物车内共 {{count}} 件",
+    "inBag_one": "{{name}} · 购物车内共 {{count}} 件"
+  },
+  "closing": {
+    "eyebrow": "购物平台的选品理念",
+    "line1": "少一点物品。",
+    "line2": "多一点意义。",
+    "description": "实用的物品、用心的细节，让生活慢一点。"
+  },
+  "footer": {
+    "description": "为日常生活挑选实用好物。",
+    "note": "演示商店 · 所有价格均为美元 · 不产生真实订单"
+  },
+  "carousel": {
+    "label": "精选商品轮播",
+    "role": "轮播",
+    "controls": "轮播控制",
+    "previous": "上一张",
+    "next": "下一张",
+    "pause": "暂停轮播",
+    "resume": "继续轮播",
+    "goTo": "切换到第 {{number}} 张：{{label}}",
+    "link": "{{action}}，跳到商品区",
+    "caption": "发现你的下一件心仪好物。",
+    "status": "第 {{number}} 张，共 {{total}} 张：{{label}}",
+    "slides": {
+      "everyday": {
+        "label": "日常好物",
+        "eyebrow": "发现你的日常心选",
+        "title": "发现好物。",
+        "emphasis": "享受每一天。",
+        "description": "为家居和日常生活挑选实用好物，让每一天更舒心。",
+        "action": "选购日常好物"
+      },
+      "travel": {
+        "label": "出行用品",
+        "eyebrow": "小小好物，陪你走远。",
+        "title": "去远方。",
+        "emphasis": "轻装出发。",
+        "description": "从早间通勤到下一次旅行，带上你喜爱的随行好物。",
+        "action": "发现出行好物"
+      },
+      "work": {
+        "label": "工作创作",
+        "eyebrow": "为书桌添一点新灵感",
+        "title": "腾点空间。",
+        "emphasis": "留给灵感。",
+        "description": "用实用好物和贴心细节，为工作空间添一点灵感。",
+        "action": "探索桌面好物"
+      }
+    }
+  },
+  "notFound": {
+    "title": "这个页面暂时找不到。",
+    "description": "你访问的页面不存在，返回首页继续选购吧。",
+    "backHome": "返回商品首页"
+  },
+  "products": {
+    "arc-lamp": {
+      "name": "弧光台灯",
+      "description": "柔和灯光，陪你度过悠闲夜晚。",
+      "color": "橄榄绿"
+    },
+    "morning-mug": {
+      "name": "晨间马克杯",
+      "description": "美好的一天，从一杯热饮开始。",
+      "color": "燕麦色"
+    },
+    "everywhere-tote": {
+      "name": "随行托特包",
+      "description": "装下随身小物，也装下更多可能。",
+      "color": "原色"
+    },
+    "daily-notebook": {
+      "name": "日常笔记本",
+      "description": "给下一个大点子留一点空间。",
+      "color": "森林绿"
+    },
+    "daybreak-bottle": {
+      "name": "晨光水瓶",
+      "description": "随时提醒自己，停一停，喝口水。",
+      "color": "陶土色"
+    },
+    "still-vase": {
+      "name": "静物花瓶",
+      "description": "插上花很美，空着也好看。",
+      "color": "赤陶色"
+    },
+    "quiet-clock": {
+      "name": "静音时钟",
+      "description": "为真正重要的事留出时间。",
+      "color": "沙色"
+    },
+    "gather-bowl": {
+      "name": "相聚餐碗",
+      "description": "陪伴餐桌上的每一次日常。",
+      "color": "鼠尾草绿"
+    }
+  }
+}

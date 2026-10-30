@@ -1,0 +1,192 @@
+{
+  "brand": {
+    "first": "Shopping",
+    "second": "Hub",
+    "name": "Shopping Hub",
+    "home": "Shopping Hub home"
+  },
+  "meta": {
+    "title": "Shopping Hub — Good things for every day",
+    "description": "Thoughtfully chosen essentials for your space, your routine, and everything in between. Explore our demo collection in USD."
+  },
+  "header": {
+    "announcement": "A little less ordinary. A little more everyday.",
+    "currency": "USD $",
+    "language": "Language",
+    "languageEn": "EN",
+    "languageZh": "中文"
+  },
+  "categories": {
+    "all": "All essentials",
+    "home": "Home & living",
+    "travel": "On the go",
+    "work": "Work & create"
+  },
+  "catalog": {
+    "skip": "Skip to products",
+    "valuesLabel": "Our collection",
+    "valueSelected": "Selected with intention",
+    "valueEveryday": "Designed for the everyday",
+    "valueWorld": "A world of small discoveries",
+    "eyebrow": "THE EDIT",
+    "title": "Your next everyday favorite.",
+    "note": "Small details. A better everyday.",
+    "categoriesLabel": "Filter by category",
+    "searchLabel": "Search products by name",
+    "searchPlaceholder": "Search by product name…",
+    "clearSearch": "Clear search",
+    "filterSearchAll": "Results for “{{query}}” across all categories",
+    "filterSearchCategory": "Results for “{{query}}” in {{category}}",
+    "filterCategory": "Browsing {{category}}",
+    "clearAll": "Clear all filters",
+    "results": "Showing {{count}} of {{total}} products",
+    "sortBy": "Sort by",
+    "sortLabel": "Sort products",
+    "sortFeatured": "Featured",
+    "sortLow": "Price: low to high",
+    "sortHigh": "Price: high to low",
+    "emptyTitle": "No products found.",
+    "emptySearchAll": "No products match “{{query}}”.",
+    "emptySearchCategory": "No products match “{{query}}” in {{category}}.",
+    "emptyCategory": "No products are available in {{category}}.",
+    "emptyHelp": "Try another product name, switch category, or clear your filters.",
+    "clearFilters": "Clear filters"
+  },
+  "common": {
+    "imageAlt": "{{name}} in {{color}}",
+    "imageUnavailable": "Image unavailable",
+    "unavailableImage": "{{name}} — image unavailable"
+  },
+  "product": {
+    "add": "Add to bag",
+    "addLabel": "Add {{name}} to bag",
+    "addLabelInBag_one": "Add {{name}} to bag, {{count}} already in bag",
+    "addLabelInBag_other": "Add {{name}} to bag, {{count}} already in bag",
+    "badges": {
+      "favorite": "THE EVERYDAY FAVORITE",
+      "new": "NEW TO THE EDIT"
+    }
+  },
+  "cart": {
+    "open_one": "Open shopping bag, {{count}} item",
+    "open_other": "Open shopping bag, {{count}} items",
+    "title": "Your bag",
+    "eyebrow": "GOOD CHOICES, ALL HERE.",
+    "close": "Close shopping bag",
+    "each": "{{color}} · {{price}} each",
+    "decrease": "Decrease quantity of {{name}}",
+    "increase": "Increase quantity of {{name}}",
+    "quantity": "Quantity: {{count}}",
+    "remove": "Remove",
+    "removeLabel": "Remove {{name}} from bag",
+    "subtotal": "Subtotal",
+    "currency": "USD",
+    "shipping": "Shipping and taxes are not included.",
+    "noPayment": "This is a demo store. No payment will be collected.",
+    "continue": "Continue exploring",
+    "emptyTitle": "A little room for good things.",
+    "emptyDescription": "Your bag is empty. Find your everyday favorite.",
+    "explore": "Explore the collection"
+  },
+  "toast": {
+    "added": "Added to your bag",
+    "inBag_one": "{{name}} · {{count}} in your bag",
+    "inBag_other": "{{name}} · {{count}} in your bag"
+  },
+  "closing": {
+    "eyebrow": "THE SHOPPING HUB WAY",
+    "line1": "Fewer things.",
+    "line2": "More meaning.",
+    "description": "Useful objects, thoughtful details, and a little room to slow down."
+  },
+  "footer": {
+    "description": "A considered collection for everyday living.",
+    "note": "Demo store · All prices in USD · No real orders"
+  },
+  "carousel": {
+    "label": "Featured collections",
+    "role": "carousel",
+    "controls": "Carousel controls",
+    "previous": "Previous slide",
+    "next": "Next slide",
+    "pause": "Pause slideshow",
+    "resume": "Resume slideshow",
+    "goTo": "Go to slide {{number}}: {{label}}",
+    "link": "{{action}} — browse products",
+    "caption": "FIND YOUR NEXT FAVORITE.",
+    "status": "Slide {{number}} of {{total}}: {{label}}",
+    "slides": {
+      "everyday": {
+        "label": "Everyday essentials",
+        "eyebrow": "DISCOVER YOUR EVERYDAY FAVORITES",
+        "title": "Good finds.",
+        "emphasis": "Every day.",
+        "description": "Thoughtful picks for your home, your routine, and everything in between.",
+        "action": "Shop everyday essentials"
+      },
+      "travel": {
+        "label": "On the go",
+        "eyebrow": "LITTLE THINGS. BIG ADVENTURES.",
+        "title": "Go places.",
+        "emphasis": "Pack light.",
+        "description": "Take your favorites along, from your morning commute to your next adventure.",
+        "action": "Explore on-the-go finds"
+      },
+      "work": {
+        "label": "Work & create",
+        "eyebrow": "A FRESH PERSPECTIVE FOR YOUR DESK",
+        "title": "Make room.",
+        "emphasis": "For ideas.",
+        "description": "Bring a little more inspiration to your workspace with useful, considered details.",
+        "action": "Discover workspace picks"
+      }
+    }
+  },
+  "notFound": {
+    "title": "This page is off the map.",
+    "description": "The page you are looking for could not be found.",
+    "backHome": "Back to shopping"
+  },
+  "products": {
+    "arc-lamp": {
+      "name": "The Arc Table Lamp",
+      "description": "A softer light for slower evenings.",
+      "color": "Olive"
+    },
+    "morning-mug": {
+      "name": "The Morning Mug",
+      "description": "A good day starts with a good cup.",
+      "color": "Oat"
+    },
+    "everywhere-tote": {
+      "name": "The Everywhere Tote",
+      "description": "Room for the little things. And more.",
+      "color": "Natural"
+    },
+    "daily-notebook": {
+      "name": "The Daily Notebook",
+      "description": "A little space for your next big idea.",
+      "color": "Forest"
+    },
+    "daybreak-bottle": {
+      "name": "The Daybreak Bottle",
+      "description": "A small reminder to take a moment.",
+      "color": "Clay"
+    },
+    "still-vase": {
+      "name": "The Still Vase",
+      "description": "Beautiful with flowers. Or without.",
+      "color": "Terracotta"
+    },
+    "quiet-clock": {
+      "name": "The Quiet Clock",
+      "description": "Make time for what matters.",
+      "color": "Sand"
+    },
+    "gather-bowl": {
+      "name": "The Gather Bowl",
+      "description": "For everyday rituals around the table.",
+      "color": "Sage"
+    }
+  }
+}

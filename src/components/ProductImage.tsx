@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import type { ImgHTMLAttributes } from 'react'
 import { Icon } from './Icon'
 
@@ -8,13 +9,14 @@ type Props = Omit<ImgHTMLAttributes<HTMLImageElement>, 'src' | 'alt' | 'onError'
 }
 
 export function ProductImage({ src, alt, className = '', style, width, height, ...props }: Props) {
+  const { t } = useTranslation()
   const [failedSource, setFailedSource] = useState<string | null>(null)
 
   // A different image URL can load normally without an extra reset effect.
   if (failedSource === src) {
-    return <span className={`image-fallback ${className}`} style={style} role={alt ? 'img' : undefined} aria-label={alt ? `${alt} — image unavailable` : undefined} aria-hidden={!alt}>
+    return <span className={`image-fallback ${className}`} style={style} role={alt ? 'img' : undefined} aria-label={alt ? t('common.unavailableImage', { name: alt }) : undefined} aria-hidden={!alt}>
       <Icon name="image" size={28} />
-      <span>Image unavailable</span>
+      <span>{t('common.imageUnavailable')}</span>
     </span>
   }
 
