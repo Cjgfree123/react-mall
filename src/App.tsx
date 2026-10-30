@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { CartDrawer } from './components/CartDrawer'
 import { Icon } from './components/Icon'
 import { ProductCard } from './components/ProductCard'
+import { HeroCarousel } from './components/HeroCarousel'
 import { categories, products } from './data/products'
 import type { Category } from './data/products'
 import './App.css'
@@ -54,8 +55,7 @@ function App() {
       <a className="skip-link" href="#collection">Skip to products</a>
       <div className="announcement-bar">A little less ordinary. A little more everyday.</div>
       <header className="site-header page-width">
-        <a className="wordmark" href="#" aria-label="Form and Field home">form<span>&</span>field<sup>®</sup></a>
-        <a className="header-link" href="#collection">The collection <Icon name="arrow" size={15} /></a>
+        <a className="wordmark" href="#" aria-label="Shopping Hub home">Shopping<span>Hub</span></a>
         <div className="header-actions">
           <span className="currency">USD $</span>
           <button className="bag-button" onClick={() => setCartOpen(true)} aria-label={`Open shopping bag, ${count} items`}>
@@ -64,23 +64,7 @@ function App() {
         </div>
       </header>
       <main className="page-width">
-        <section className="hero" aria-labelledby="hero-title">
-          <div className="hero-copy">
-            <span className="eyebrow"><span className="little-dot" /> THE EVERYDAY COLLECTION · VOL. 01</span>
-            <h1 id="hero-title">Good things.<br />For <em>every day.</em></h1>
-            <p>Thoughtfully chosen essentials for your space,<br className="desktop-break" /> your routine, and everything in between.</p>
-            <a className="primary-button" href="#collection">Explore the collection <Icon name="arrow" size={18} /></a>
-          </div>
-          <div className="hero-art" aria-hidden="true">
-            <div className="art-circle" />
-            <span className="art-caption">LESS, BUT BETTER.</span>
-            <img className="hero-lamp" src="/products/lamp.svg" alt="" />
-            <img className="hero-mug" src="/products/mug.svg" alt="" />
-            <img className="hero-vase" src="/products/vase.svg" alt="" />
-            <div className="art-platform" />
-            <span className="art-edition">OBJECTS FOR A WELL-LIVED LIFE <span>↗</span></span>
-          </div>
-        </section>
+        <HeroCarousel />
         <div className="values-strip" aria-label="Our collection">
           <span><Icon name="spark" size={17} /> Selected with intention</span>
           <span><Icon name="leaf" size={17} /> Designed for the everyday</span>
@@ -119,9 +103,9 @@ function App() {
             </div>}
           </div>
         </section>
-        <section className="closing-note"><span className="eyebrow">THE FORM & FIELD WAY</span><p>Fewer things.<br /><em>More meaning.</em></p><span>Useful objects, thoughtful details, and a little room to slow down.</span></section>
+        <section className="closing-note"><span className="eyebrow">THE SHOPPING HUB WAY</span><p>Fewer things.<br /><em>More meaning.</em></p><span>Useful objects, thoughtful details, and a little room to slow down.</span></section>
       </main>
-      <footer className="site-footer page-width"><a className="wordmark" href="#">form<span>&</span>field<sup>®</sup></a><span>A considered collection for everyday living.</span><small>Demo store · All prices in USD · No real orders</small></footer>
+      <footer className="site-footer page-width"><a className="wordmark" href="#">Shopping<span>Hub</span></a><span>A considered collection for everyday living.</span><small>Demo store · All prices in USD · No real orders</small></footer>
       <div className="toast-region" role="status" aria-live="polite" aria-atomic="true">
         {toast && <div className="cart-toast" key={toast.id}>
           <span className="toast-check"><Icon name="check" size={18} /></span>
